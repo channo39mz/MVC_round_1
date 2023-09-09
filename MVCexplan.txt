@@ -1,0 +1,26 @@
+เปิดใน Unity V 2021.3.11f1
+export คือ version export โปรแกรมเป็น .exe
+Mvc floder เป็นที่เก็บโปรเจคและ code ทั้งหมด
+Source Code
+
+code ส่วน view อยู่ใน Assets -> view 
+code ส่วน controller อยู่ใน Assets -> controller
+code ส่วน model อยู่ใน Assets -> model
+
+โค้ดส่วนของ view ทำงานโดยไปเรียนใช้ คำสั่งใน controll โดยรับ button click (มี 2 ฟังชั่น โดย แต่ละฟังชั่นอยู่ใน button คนละตัว) 
+และ คำสั่งภาษาMOML จาก userและส่งไปทำงานที่ controller จากนั้นรอค่า ที่ได้จาก controller มา แสดงให้ user ผ่าน Debug.Log
+
+โค้ดส่วนของ controller รับค่าจาก โค้ดใน view ทำการแยก Tag และ UNTAGGED จากนั้นเก็บในรูป List ของ string
+แล้วส่งกลับไปให้ โค้ดในส่วน view นำไปแสดงผลให้ user โดย controller exten มาจาก Interface class ของ
+โมเดล
+
+โค้ดส่วนของ model เป็น Interface class เพื่อให้เมื่อมีการเปลี่ยนแปลง จะต้องมีฟังชั่นที่รับ input อย่างไร
+และส่ง out put ออกไปบ้าง
+
+*ผมส่ง โค้ด C# แยกให้ด้วยเพื่อ แตกไฟล์ .rar ไม่ได้
+datacontroll.cs , getinput.cs , splitTagcon.cs อยู่ใน controller
+tagmodel.cs อยู่ใน model
+Onclickcon.cs อยู่ใน  view 
+* datacontroll.cs ใช้ทำฐานข้อมูล .data แต่ไม่ได้ใช้
+
+65050197 ชาญธิษณ์ พัวศิริ ข้อที่2
